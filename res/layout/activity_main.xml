@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.ljy.htmleditor.widget.html.HtmlEditText
+            android:id="@+id/editNoteContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="top|left"
+            android:minLines="5"
+            android:padding="10dp"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layoutOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCC"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bold"/>
+
+                <Button
+                    android:id="@+id/btnBoldChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bold_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnItalic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_italic" />
+
+                <Button
+                    android:id="@+id/btnItalicChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_italic_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnUnderline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_underline"/>
+
+                <Button
+                    android:id="@+id/btnUnderlineChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_underline_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnMiddleline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_middleline"/>
+
+                <Button
+                    android:id="@+id/btnMiddlelineChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_middleline_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnUL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_ul"/>
+
+                <Button
+                    android:id="@+id/btnULChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_ul_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnOL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_ol" />
+
+                <Button
+                    android:id="@+id/btnOLChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_ol_c"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnAlignLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_left"/>
+
+                <Button
+                    android:id="@+id/btnAlignLeftChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_left_checked"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnAlignCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_center" />
+
+                <Button
+                    android:id="@+id/btnAlignCenterChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_center_checked"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btnAlignRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_right"/>
+
+                <Button
+                    android:id="@+id/btnAlignRightChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_align_right_checked"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnForegroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_foreground_color"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
